@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Luke Kokoftopoulos - Software Engineer">
     <title>Luke Kokoftopoulos - Software Engineer</title>
-    <link rel="icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,6 +83,41 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #FFE44D;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                overflow: auto;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .social-links a {
+                font-size: 1.5rem;
+                min-width: auto;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .social-links a {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
