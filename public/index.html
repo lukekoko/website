@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site for Luke Kokoftopoulos' E-portfolio"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luke Kokoftopoulos - Software Engineer">
+    <title>Luke Kokoftopoulos - Software Engineer</title>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto Mono", monospace;
+            background-color: beige;
+            overflow: hidden;
+        }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+            padding: 20px;
+        }
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        .content {
+            text-align: left;
+            max-width: 1200px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        .highlight {
+            background-color: #FFD700;
+            padding: 15px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            color: #000;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 4rem;
+            margin: 0;
+            color: #333;
+            font-weight: 400;
+        }
+
+        .social-links {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: #000;
+            text-decoration: none;
+            font-size: 2.5rem;
+            padding: 0px 0px;
+            border-radius: 0px;
+            background-color: #FFD700;
+            transition: all 0.2s ease;
+            min-width: 650px;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #FFE44D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Luke Kokoftopoulos</h1>
+            <h2>Software Engineer</h2>
+            <div class="social-links">
+                <a href="mailto:contact@lukekoko.com"><i class="fa-solid fa-square-envelope"></i>contact@lukekoko.com</a>
+                <a href="https://www.linkedin.com/in/lukekoko/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i>linkedin.com/in/lukekoko</a>
+                <a href="https://github.com/lukekoko" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i>github.com/lukekoko</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
