@@ -1,23 +1,18 @@
-# Getting Started with Create React App
+# Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal website showcasing my professional links. Simple, clean, and straight to the point.
 
-## Available Scripts
+## Technology
 
-In the project directory, you can run:
+Built with plain HTML and CSS, focusing on simplicity and performance.
 
-### `npm start`
+## Development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To make changes, simply edit the `public/index.html` file. The website can be tested locally by opening the HTML file in a browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Deployment
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This site is deployed using GitHub Pages at [lukekoko.github.io](https://lukekoko.github.io/)
 
 ### `npm run build`
 
